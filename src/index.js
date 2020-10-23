@@ -6,6 +6,10 @@ import connect from './connect/connect'
 import { useDispatch, createDispatchHook } from './hooks/useDispatch'
 import { useSelector, createSelectorHook } from './hooks/useSelector'
 import { useStore, createStoreHook } from './hooks/useStore'
+import {
+  useTrackedState,
+  createTrackedStateHook
+} from './hooks/useTrackedState'
 
 import { setBatch } from './utils/batch'
 import { unstable_batchedUpdates as batch } from './utils/reactBatchedUpdates'
@@ -25,5 +29,7 @@ export {
   createSelectorHook,
   useStore,
   createStoreHook,
+  useTrackedState,
+  createTrackedStateHook,
   shallowEqual
 }
