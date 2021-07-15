@@ -17,6 +17,7 @@ module.exports = {
           '@babel/runtime'
         ].replace(/^[^0-9]*/, '')
       }
-    ]
-  ].filter(Boolean)
+    ],
+    'babel-plugin-dynamic-import-node'
+  ].filter(Boolean),
 }
